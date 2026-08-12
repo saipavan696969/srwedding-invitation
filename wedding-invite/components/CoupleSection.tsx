@@ -10,7 +10,6 @@ function ProfileCard({
   fullName,
   parents,
   intro,
-  image,
   side,
   gradientFrom,
   gradientTo,
@@ -20,7 +19,7 @@ function ProfileCard({
   fullName: string;
   parents: string;
   intro: string;
-  image: string;
+  image?: string;
   side: "left" | "right";
   gradientFrom: string;
   gradientTo: string;

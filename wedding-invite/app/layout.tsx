@@ -36,6 +36,7 @@ export default function RootLayout({
         {/* Cormorant Garamond — headings */}
         {/* Inter — body */}
         {/* Cinzel Decorative — display accents */}
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&family=Cinzel+Decorative:wght@400;700&display=swap"
           rel="stylesheet"
