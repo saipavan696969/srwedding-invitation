@@ -2,12 +2,12 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ananya & Arjun — Wedding Invitation",
+  title: "SaiPavan & Roshni — Wedding Invitation",
   description:
-    "Join us in celebrating the sacred union of Ananya Reddy and Arjun Kumar on Sunday, 18 August 2026 at Sri Kalyana Mahal, Hyderabad.",
-  keywords: ["wedding", "invitation", "Ananya", "Arjun", "Hyderabad", "South Indian wedding"],
+    "Join us in celebrating the sacred union of SaiPavan and Roshni on Sunday, 18 August 2026 at Sri Kalyana Mahal, Hyderabad.",
+  keywords: ["wedding", "invitation", "Roshni", "SaiPavan", "Hyderabad", "South Indian wedding"],
   openGraph: {
-    title: "Ananya & Arjun — Wedding Invitation",
+    title: "SaiPavan & Roshni — Wedding Invitation",
     description: "We joyfully invite you to celebrate our wedding on 18 August 2026.",
     type: "website",
   },

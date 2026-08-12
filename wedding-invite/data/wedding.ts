@@ -71,7 +71,7 @@ export interface WeddingData {
 export const weddingData: WeddingData = {
   bride: {
     name: "Roshni",
-    fullName: "Roshni Ambulkar",
+    fullName: "Roshni",
     parents: "Beloved daughter of Mr. Premlal Ambulkar",
     intro:
       "Warm, graceful, and full of light — Roshni brings joy and calm to every moment she enters.",
@@ -79,11 +79,11 @@ export const weddingData: WeddingData = {
   },
 
   groom: {
-    name: "Sai",
-    fullName: "Sai Rao",
+    name: "SaiPavan",
+    fullName: "SaiPavan",
     parents: "Cherished son of Mr. Srinivas Rao",
     intro:
-      "Thoughtful, steadfast, and devoted — Sai is the kind of person who makes everyone around him feel at home.",
+      "Thoughtful, steadfast, and devoted — SaiPavan is the kind of person who makes everyone around him feel at home.",
     image: "/images/groom.jpg",
   },
 
@@ -149,7 +149,7 @@ export const weddingData: WeddingData = {
       time: "6:00 PM onwards",
       venue: "Sai Madhura Banquet Hall, Hafeezpet, Miyapur, Hyderabad",
       description:
-        "An elegant evening celebration to welcome Sai and Roshni as a couple, and to shower them with your blessings and love.",
+        "An elegant evening celebration to welcome SaiPavan and Roshni as a couple, and to shower them with your blessings and love.",
       icon: "star",
     },
   ],
@@ -201,7 +201,7 @@ export const weddingData: WeddingData = {
     {
       id: "g1",
       src: "/images/couple-1.jpg",
-      alt: "Roshni and Sai together",
+      alt: "SaiPavan and Roshni together",
       caption: "Our favourite moment",
       gradientFrom: "#C69A3B",
       gradientTo: "#6D1628",

@@ -210,7 +210,7 @@ export default function HeroSection() {
           className="font-heading text-white leading-none mb-3"
           style={{ fontSize: "clamp(3.5rem, 12vw, 6rem)" }}
         >
-          {bride.name}
+          {groom.name}
         </motion.h1>
 
         <motion.div
@@ -228,7 +228,7 @@ export default function HeroSection() {
           className="font-heading text-white leading-none mb-8"
           style={{ fontSize: "clamp(3.5rem, 12vw, 6rem)" }}
         >
-          {groom.name}
+          {bride.name}
         </motion.h1>
 
         <motion.p

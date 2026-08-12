@@ -157,11 +157,11 @@ export default function CoupleSection() {
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 md:gap-0">
           <div className="flex-1 flex justify-center md:justify-end md:pr-8">
             <ProfileCard
-              {...bride}
+              {...groom}
               side="left"
-              gradientFrom="#C69A3B"
-              gradientTo="#6D1628"
-              iconType="bride"
+              gradientFrom="#1F4A3D"
+              gradientTo="#0a1f19"
+              iconType="groom"
             />
           </div>
 
@@ -169,11 +169,11 @@ export default function CoupleSection() {
 
           <div className="flex-1 flex justify-center md:justify-start md:pl-8">
             <ProfileCard
-              {...groom}
+              {...bride}
               side="right"
-              gradientFrom="#1F4A3D"
-              gradientTo="#0a1f19"
-              iconType="groom"
+              gradientFrom="#C69A3B"
+              gradientTo="#6D1628"
+              iconType="bride"
             />
           </div>
         </div>

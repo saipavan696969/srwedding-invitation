@@ -75,9 +75,9 @@ export default function Footer() {
           <h2 className="font-heading italic text-white mt-4 leading-tight"
             style={{ fontSize: "clamp(2.5rem, 8vw, 4rem)" }}
           >
-            {bride.name}
-            <span className="text-gold/70 mx-3">&amp;</span>
             {groom.name}
+            <span className="text-gold/70 mx-3">&amp;</span>
+            {bride.name}
           </h2>
 
           <p className="font-display text-gold/60 text-xs tracking-[0.4em] uppercase mt-2 mb-6">
@@ -112,10 +112,10 @@ export default function Footer() {
               }}
             >
               <p className="font-body text-gold/50 text-xs tracking-[0.25em] uppercase mb-1">
-                Bride&apos;s Family
+                Groom&apos;s Family
               </p>
               <p className="font-heading text-white/80 text-lg">
-                {bride.parents}
+                {groom.parents}
               </p>
             </div>
             <div
@@ -126,10 +126,10 @@ export default function Footer() {
               }}
             >
               <p className="font-body text-gold/50 text-xs tracking-[0.25em] uppercase mb-1">
-                Groom&apos;s Family
+                Bride&apos;s Family
               </p>
               <p className="font-heading text-white/80 text-lg">
-                {groom.parents}
+                {bride.parents}
               </p>
             </div>
           </div>
