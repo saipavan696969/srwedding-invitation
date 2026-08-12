@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Custom Properties ─────────────────────────────────── */
+:root {
+  --color-maroon: #6d1628;
+  --color-maroon-light: #8b1e2d;
+  --color-gold: #c69a3b;
+  --color-gold-light: #d4af6b;
+  --color-green: #1f4a3d;
+  --color-cream: #fff9f0;
+  --color-ivory: #fffdf8;
+  --color-text: #3d2924;
+  --color-muted: #7a5c54;
+}
+
+/* ─── Base Styles ────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #fff9f0;
+  color: #3d2924;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ─── Typography ─────────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.font-display {
+  font-family: "Cinzel Decorative", Georgia, serif;
+}
+
+/* ─── Focus Styles (Accessibility) ──────────────────────────── */
+:focus-visible {
+  outline: 2px solid #c69a3b;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ─── Custom Scrollbar ───────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fff9f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #c69a3b;
+  border-radius: 3px;
+}
+
+/* ─── Petal Animations ───────────────────────────────────────── */
+@keyframes petalFall {
+  0% {
+    transform: translateY(-60px) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.9;
+  }
+  25% {
+    transform: translateY(25vh) translateX(-35px) rotate(200deg);
+  }
+  50% {
+    transform: translateY(52vh) translateX(35px) rotate(400deg);
+    opacity: 0.7;
+  }
+  75% {
+    transform: translateY(78vh) translateX(-20px) rotate(580deg);
+  }
+  92% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(108vh) translateX(15px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* ─── Gold Shimmer ───────────────────────────────────────────── */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    #c69a3b 0%,
+    #d4af6b 25%,
+    #f5e6c0 50%,
+    #d4af6b 75%,
+    #c69a3b 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ─── Decorative border ──────────────────────────────────────── */
+.gold-border {
+  border: 1px solid rgba(198, 154, 59, 0.5);
+}
+
+.gold-border-2 {
+  border: 2px solid rgba(198, 154, 59, 0.6);
+}
+
+/* ─── Text selection ─────────────────────────────────────────── */
+::selection {
+  background: rgba(198, 154, 59, 0.3);
+  color: #3d2924;
+}
+
+/* ─── Image placeholder shimmer ─────────────────────────────── */
+@keyframes placeholderShimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.placeholder-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 249, 240, 0.1) 25%,
+    rgba(255, 249, 240, 0.3) 50%,
+    rgba(255, 249, 240, 0.1) 75%
+  );
+  background-size: 400px 100%;
+  animation: placeholderShimmer 2s ease-in-out infinite;
+}
+
+/* ─── Reduced motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .petal-container {
+    display: none !important;
+  }
+}
+
+/* ─── Prose / Long text ──────────────────────────────────────── */
+.wedding-prose {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* ─── Section padding ────────────────────────────────────────── */
+.section-pad {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* ─── Timeline line ──────────────────────────────────────────── */
+.timeline-line {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #c69a3b 10%,
+    #c69a3b 90%,
+    transparent 100%
+  );
+}
+
+/* ─── Elegant quote marks ────────────────────────────────────── */
+.quote-mark {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-size: 5rem;
+  line-height: 0.5;
+  color: rgba(198, 154, 59, 0.4);
+  font-style: italic;
+}
+
+/* ─── Card hover lift ────────────────────────────────────────── */
+@media (hover: hover) {
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(109, 22, 40, 0.15);
+  }
+}
