@@ -118,8 +118,11 @@ function TempleArch() {
 function GaneshSymbol() {
   return (
     <div className="text-center mb-6">
-      <p className="font-display text-gold text-xs tracking-[0.35em] uppercase mb-1">
+      <p className="font-display text-gold text-xs tracking-[0.35em] uppercase mb-0.5">
         ॥ श्री गणेशाय नमः ॥
+      </p>
+      <p className="font-display text-gold text-xs tracking-[0.35em] uppercase mb-1">
+        ॥ శ్రీ గణేశాయ నమః ॥
       </p>
       <div className="flex items-center justify-center gap-3">
         <div className="h-px w-16 bg-gold/40" />

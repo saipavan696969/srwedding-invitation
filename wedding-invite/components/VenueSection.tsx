@@ -12,7 +12,7 @@ function MapPlaceholder() {
       style={{
         background: "linear-gradient(135deg, #1F4A3D 0%, #0a2e24 100%)",
       }}
-      aria-label="Map of Sri Kalyana Mahal, Jubilee Hills, Hyderabad"
+      aria-label="Map of Sai Madhura Banquet Hall, Hyderabad"
     >
       {/* Grid lines for map feel */}
       <svg
@@ -62,10 +62,10 @@ function MapPlaceholder() {
           }}
         >
           <p className="font-heading text-maroon text-sm font-semibold">
-            Sri Kalyana Mahal
+            Sai Madhura Banquet Hall
           </p>
           <p className="font-body text-temple-muted text-xs">
-            Jubilee Hills, Hyderabad
+            Hafeezpet, Hyderabad
           </p>
         </div>
       </div>

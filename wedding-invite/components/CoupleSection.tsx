@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import ImagePlaceholder from "./ImagePlaceholder";
 import SectionDivider from "./SectionDivider";
@@ -10,6 +11,7 @@ function ProfileCard({
   fullName,
   parents,
   intro,
+  image,
   side,
   gradientFrom,
   gradientTo,
@@ -64,13 +66,23 @@ function ProfileCard({
         {/* Gold border frame */}
         <div className="absolute inset-0 rounded-[1.5rem] border-2 border-gold/50 overflow-hidden z-10" />
         {/* Image / placeholder */}
-        <ImagePlaceholder
-          from={gradientFrom}
-          to={gradientTo}
-          icon={iconType}
-          label={name}
-          className="absolute inset-0 rounded-[1.4rem]"
-        />
+        {image ? (
+          <Image
+            src={image}
+            alt={name}
+            fill
+            className="absolute inset-0 rounded-[1.4rem] object-cover object-top"
+            sizes="(max-width: 640px) 256px, 288px"
+          />
+        ) : (
+          <ImagePlaceholder
+            from={gradientFrom}
+            to={gradientTo}
+            icon={iconType}
+            label={name}
+            className="absolute inset-0 rounded-[1.4rem]"
+          />
+        )}
         {/* Inner glow overlay */}
         <div
           className="absolute inset-0 rounded-[1.4rem] z-20"

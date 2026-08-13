@@ -51,6 +51,7 @@ export interface WeddingData {
     tithi: string;
     dressSuggestion: string;
     quote: string;
+    quoteTelugu: string;
     quoteTranslation: string;
   };
   venue: {
@@ -93,7 +94,7 @@ export const weddingData: WeddingData = {
 
   heroInviteLine: "Together with our families",
   welcomeMessage:
-    "We first met at the same company, working in different teams. What started as a simple connection grew into a beautiful journey of over two years filled with friendship, trust, and love. With the blessings and support of both our families, we are now beginning the most special chapter of our lives together. We warmly invite you to celebrate our wedding with us.",
+    "We met as professional colleagues, and somewhere between the workdays and conversations, something beautiful happened. With the blessings of both our families, we are now beginning the most special chapter of our lives together. We warmly invite you to celebrate our wedding with us.",
 
   muhurtham: {
     date: "Tuesday, 18 August 2026",
@@ -103,14 +104,14 @@ export const weddingData: WeddingData = {
     dressSuggestion:
       "Traditional South Indian attire — Silk sarees or Pattu pavadai for ladies; Dhoti or Kurta for gentlemen",
     quote: "विवाहः परमो धर्मः",
+    quoteTelugu: "వివాహః పరమో ధర్మః",
     quoteTranslation: "Marriage is the highest dharma",
   },
 
   venue: {
     name: "Sai Madhura Banquet Hall",
     address: "Alwyn Cross Road, Hafeezpet, Miyapur, Hyderabad",
-    mapUrl:
-      "https://maps.google.com/?q=Sai+Madhura+Banquet+Hall+Hafeezpet+Miyapur+Hyderabad",
+    mapUrl: "https://maps.app.goo.gl/rqB3E56iHbnZ5wfu6",
   },
 
   contact: {
@@ -127,7 +128,7 @@ export const weddingData: WeddingData = {
       name: "Haldi Ceremony",
       date: "Sunday, 16 August 2026",
       time: "4:00 PM onwards",
-      venue: "Sai Madhura Banquet Hall, Hafeezpet, Miyapur, Hyderabad",
+      venue: "Royal Pride Apartment, Pride Park Colony, Ameenpur, Hyderabad",
       description:
         "A joyful ceremony where turmeric paste is lovingly applied to bless the couple with radiance and ward off evil before the wedding.",
       icon: "sun",
@@ -157,10 +158,10 @@ export const weddingData: WeddingData = {
   story: [
     {
       id: "meet",
-      title: "Same Company, Different Teams",
-      date: "Two Years Ago",
+      title: "Professional Colleagues",
+      date: "Where It All Began",
       description:
-        "We first met at the same company, working in different teams. A simple introduction that neither of us knew would change everything.",
+        "We met as professional colleagues — and somewhere between the workdays and conversations, something beautiful happened.",
       icon: "sparkles",
     },
     {
@@ -225,26 +226,26 @@ export const weddingData: WeddingData = {
     {
       id: "g4",
       src: "/images/couple-4.jpg",
-      alt: "Traditional portrait",
-      caption: "Traditional joy",
-      gradientFrom: "#7A3C1A",
-      gradientTo: "#4A0E1A",
+      alt: "SaiPavan and Roshni together",
+      caption: "City lights",
+      gradientFrom: "#1a1a2e",
+      gradientTo: "#6D1628",
     },
     {
       id: "g5",
       src: "/images/couple-5.jpg",
-      alt: "Portrait together",
+      alt: "SaiPavan and Roshni portrait",
       caption: "Always together",
       gradientFrom: "#C69A3B",
       gradientTo: "#1F4A3D",
     },
     {
       id: "g6",
-      src: "/images/venue.jpg",
-      alt: "Sai Madhura Banquet Hall",
-      caption: "Our beautiful venue",
-      gradientFrom: "#2C3E50",
-      gradientTo: "#1F4A3D",
+      src: "/images/couple-6.jpg",
+      alt: "SaiPavan and Roshni together",
+      caption: "Our journey",
+      gradientFrom: "#8B1E2D",
+      gradientTo: "#3a0915",
     },
   ],
 };

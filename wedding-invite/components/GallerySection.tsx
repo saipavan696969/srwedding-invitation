@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import ImagePlaceholder from "./ImagePlaceholder";
 import SectionDivider from "./SectionDivider";
 import { weddingData, type GalleryImage } from "@/data/wedding";
 
@@ -28,11 +28,12 @@ function GalleryCard({
       style={{ boxShadow: "0 4px 20px rgba(109,22,40,0.08)" }}
       aria-label={`View ${image.alt}`}
     >
-      <ImagePlaceholder
-        from={image.gradientFrom}
-        to={image.gradientTo}
-        className="absolute inset-0 transition-transform duration-500 group-hover:scale-110"
-        aria-label={image.alt}
+      <Image
+        src={image.src}
+        alt={image.alt}
+        fill
+        className="absolute inset-0 object-cover transition-transform duration-500 group-hover:scale-110"
+        sizes="(max-width: 640px) 50vw, (max-width: 768px) 50vw, 33vw"
       />
       {/* Hover overlay */}
       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-end p-4">
@@ -93,12 +94,12 @@ function Lightbox({
             className="rounded-2xl overflow-hidden aspect-[3/4] border border-gold/30"
             style={{ boxShadow: "0 20px 60px rgba(0,0,0,0.5)" }}
           >
-            <ImagePlaceholder
-              from={image.gradientFrom}
-              to={image.gradientTo}
-              label={image.caption}
-              className="w-full h-full"
-              aria-label={image.alt}
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, 512px"
             />
           </div>
 

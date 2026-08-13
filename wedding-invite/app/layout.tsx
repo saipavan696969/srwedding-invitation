@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "SaiPavan & Roshni — Wedding Invitation",
   description:
-    "Join us in celebrating the sacred union of SaiPavan and Roshni on Sunday, 18 August 2026 at Sri Kalyana Mahal, Hyderabad.",
+    "Join us in celebrating the sacred union of SaiPavan and Roshni on Tuesday, 18 August 2026 at Sai Madhura Banquet Hall, Hyderabad.",
   keywords: ["wedding", "invitation", "Roshni", "SaiPavan", "Hyderabad", "South Indian wedding"],
   openGraph: {
     title: "SaiPavan & Roshni — Wedding Invitation",

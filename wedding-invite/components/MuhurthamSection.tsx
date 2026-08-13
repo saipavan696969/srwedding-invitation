@@ -182,11 +182,6 @@ export default function MuhurthamSection() {
               value: muhurtham.nakshatra,
             },
             {
-              icon: <Star size={18} className="text-gold/70" />,
-              label: "Tithi",
-              value: muhurtham.tithi,
-            },
-            {
               icon: <MapPin size={18} className="text-gold/70" />,
               label: "Venue",
               value: venue.name,
@@ -219,7 +214,7 @@ export default function MuhurthamSection() {
           ))}
         </motion.div>
 
-        {/* Sanskrit quote */}
+        {/* Quote */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -232,10 +227,16 @@ export default function MuhurthamSection() {
           }}
         >
           <p
-            className="font-heading italic text-gold text-3xl sm:text-4xl mb-3"
-            lang="sa"
+            className="font-heading italic text-gold text-3xl sm:text-4xl mb-2"
+            lang="hi"
           >
             {muhurtham.quote}
+          </p>
+          <p
+            className="font-heading italic text-gold/80 text-2xl sm:text-3xl mb-3"
+            lang="te"
+          >
+            {muhurtham.quoteTelugu}
           </p>
           <p className="font-body text-white/60 text-sm tracking-wide">
             &ldquo;{muhurtham.quoteTranslation}&rdquo;
