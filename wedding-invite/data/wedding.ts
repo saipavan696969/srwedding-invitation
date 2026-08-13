@@ -92,7 +92,7 @@ export const weddingData: WeddingData = {
   weddingDate: "2026-08-18T04:02:00+05:30",
   displayDate: "Tuesday, 18 August 2026",
 
-  heroInviteLine: "Together with our families",
+  heroInviteLine: "With joy in our hearts,",
   welcomeMessage:
     "We met as professional colleagues, and somewhere between the workdays and conversations, something beautiful happened. With the blessings of both our families, we are now beginning the most special chapter of our lives together. We warmly invite you to celebrate our wedding with us.",
 
@@ -120,7 +120,7 @@ export const weddingData: WeddingData = {
   },
 
   footerInvitation:
-    "Together with our families, we request the honour of your presence and blessings as we begin our new journey.",
+    "We request the honour of your presence and blessings as we begin this beautiful journey together.",
 
   events: [
     {

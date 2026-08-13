@@ -238,7 +238,7 @@ export default function HeroSection() {
           variants={itemVariants}
           className="font-body text-gold-light/70 text-sm tracking-[0.15em] uppercase mb-6"
         >
-          Invite you to celebrate their wedding
+          invite you to celebrate our wedding
         </motion.p>
 
 
